@@ -12,8 +12,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Content Include="Templates\**\*.html" CopyToOutputDirectory="PreserveNewest" />
-		<Content Include="images\**" CopyToOutputDirectory="PreserveNewest" />
+		<Content Include="Templates\**\*.html" CopyToOutputDirectory="AlwaysCopy" />
+		<Content Include="images\**" CopyToOutputDirectory="AlwaysCopy" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Update="images\assembly.jpg.bak">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="images\assembly.jpg">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="Templates\CatalogSingle.html">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	</ItemGroup>
 
 </Project>
